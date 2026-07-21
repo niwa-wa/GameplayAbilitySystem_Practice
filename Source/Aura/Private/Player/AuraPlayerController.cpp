@@ -19,7 +19,7 @@ void AAuraPlayerController::BeginPlay()
 	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(GetLocalPlayer());
 	check(Subsystem);
 
-	Subsystem->AddMappingContext(AuraContext, 0);
+	Subsystem->AddMappingContext(AuraContext, 0);//第二个参数是优先级,数字越大优先级越高
 
 	bShowMouseCursor = true;
 	DefaultMouseCursor = EMouseCursor::Default;
