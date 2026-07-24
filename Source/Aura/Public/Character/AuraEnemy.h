@@ -19,4 +19,7 @@ public:
 	virtual void HighLightActor() override;
 
 	virtual void unHighLightActor() override;
+
+	UPROPERTY(BlueprintReadOnly)
+	bool bHighLighted = false;
 };
