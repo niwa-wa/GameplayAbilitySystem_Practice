@@ -15,6 +15,7 @@ void AAuraPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
 
+	
 	check(AuraContext);//检查AuraContext是否有效
 
 	UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(GetLocalPlayer());
